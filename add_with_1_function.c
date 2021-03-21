@@ -1,4 +1,4 @@
-//Write a program to add two user input numbers using one function.
+//WAP to add two user input numbers using one function.
 #include <stdio.h>
 int main()
 {
