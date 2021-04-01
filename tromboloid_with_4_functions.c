@@ -1,30 +1,31 @@
-#include<stdio.h>
-int input()
+#include <stdio.h>
+float input()
 {
-int a;
-printf("Enter a number: ");
-scanf("%d", &a);
-return a;
+    float a; 
+    printf("Enter a number:\n");
+    scanf("%f", &a);
+    return a;
 }
 
-int find_sum(int a, int b)
+float find_volume(float a, float b, float c)
 {
-int sum;
-sum = a+b;
-return sum;
+    float volume;
+    volume = ((a*b*c)+(b/c))*1/3;
+    return volume;
 }
 
-void output(int a, int b, int c)
+void output(float a)
 {
-printf("Sum of %d + %d is %d\n", a, b, c);
+    printf("The result is %f",a);
 }
 
 int main()
 {
-int x, y, z;
-x = input();
-y = input();
-z = find_sum(x, y);
-output(x, y, z);
-return 0;
+    float x, y, z, volume;
+    x = input();
+    y = input();
+    z = input();
+    volume = find_volume(x, y, z);
+    output(volume);
+    return 0;
 }
